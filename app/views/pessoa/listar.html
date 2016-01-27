@@ -1,0 +1,27 @@
+﻿<table class="table table-striped table-hover ">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat="pessoa in pessoas">
+            <td>{{pessoa.Id}}</td>
+            <td>{{pessoa.Nome}}</td>
+            <td>{{pessoa.Endereco}}</td>
+            <td>
+                <a href="#/pessoa/edit/{{pessoa.Id}}" ng-click="Editar(pessoa.Id)"
+                   class="btn btn-info">Editar</a>
+            </td>
+            <td>
+                <a href="#" ng-click="deletar(pessoa.Id)"
+                   class="btn btn-danger">Deletar</a>
+            </td>
+        </tr>
+</table>

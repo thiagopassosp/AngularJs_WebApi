@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+
+<head>
+    <title>Angular + WebApi</title>        
+    <link href="content/css/bootstrap.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.26/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/pessoa/editarController.js"></script>
+    <script src="controllers/pessoa/CrudController.js"></script>    
+    <script src="controllers/pessoa/novaController.js"></script>
+
+</head>
+
+<body>
+
+    <a href="#/pessoa/nova" class="btn btn-primary">Nova pessoa</a>
+    <div ng-view></div>
+
+</body>
+
+</html>
